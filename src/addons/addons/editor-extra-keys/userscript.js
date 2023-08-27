@@ -26,7 +26,6 @@ export default async function ({ addon, msg }) {
             [";", ";"],
             ["'", "'"],
             ["/", "/"],
-            ["F4", "F4"],
           ]
         );
       }
