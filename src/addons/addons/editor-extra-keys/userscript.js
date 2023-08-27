@@ -58,8 +58,6 @@ export default async function ({ addon, msg }) {
             ["ö", "ö"],
             ["ü", "ü"],
             ["ß", "ß"],
-            ["£", "£"],
-            ["¥", "¥"],
           ]
         );
       }
