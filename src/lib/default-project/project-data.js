@@ -3,7 +3,7 @@ import sharedMessages from '../shared-messages';
 
 let messages = defineMessages({
     variable: {
-        defaultMessage: 'my variable',
+        defaultMessage: 'variable',
         description: 'Name for the default variable',
         id: 'gui.defaultProject.variable'
     }
@@ -70,7 +70,7 @@ const projectData = translateFunction => {
                     }
                 ],
                 sounds: [],
-                volume: 100,
+                volume: 101,
                 visible: true,
                 x: 0,
                 y: 0,
