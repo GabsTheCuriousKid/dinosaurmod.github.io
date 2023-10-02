@@ -615,7 +615,12 @@ const events = function (isInitialSetup, isStage) {
         ${isStage ? `
             <block type="event_whenstageclicked"/>
         ` : `
-            <block type="event_whenthisspriteclicked"/>
+            <block type="event_whenthisspriteclicked"/><block>
+            <block type="event_whentouchingobject"/>
+                <value name="TOUCHINGOBJECTMENU">
+                    <shadow type="sensing_touchingobjectmenu"/>
+                </value>
+            <block>
         `}
         <block type="event_whenbackdropswitchesto">
         </block>
@@ -904,6 +909,8 @@ const sensing = function (isInitialSetup, isStage) {
             </value>
         </block>
         <block type="sensing_getclipboard"/>
+        ${blockSeparator}
+        <block type="sensing_loud"/>
         ${isStage ? '' : `
             ${blockSeparator}
             <block type="sensing_setdragmode" id="sensing_setdragmode"></block>
